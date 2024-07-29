@@ -1,1 +1,3 @@
-# Python_Guided_Data_Analysis_Project
+# Guided Python Data Analysis Project Documentation
+
+## Plot 1: US skill demand
