@@ -1,6 +1,6 @@
 ###### [Venter Bálint](https://github.com/vbalint14), 2024.07.31.
 # Guided Python Data Analysis Project Documentation
-This file is a documentation of a project done as a final of [Luke Barousse](https://github.com/lukebarousse)'s 'Python for Data analytics' course
+This file is a documentation of a project done as a final of [**Luke Barousse**](https://github.com/lukebarousse)'s 'Python for Data analytics' course
 
 ## Plot 1: US skill demand
 ### Goal:
