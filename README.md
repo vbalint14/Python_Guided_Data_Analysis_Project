@@ -54,6 +54,9 @@ plt.tight_layout()
 plt.show()
 ```
 
+### Plot image:
+![image](https://github.com/user-attachments/assets/2f5a1028-51e1-4801-8be0-396da2e8611f)
+
 ### Conclusion of the plot:
 **Data Analyst:**
 Top Skills: SQL (51%), Excel (41%), Tableau (28%), Python (27%), SAS (19%).
@@ -97,6 +100,9 @@ plt.title('Data Analyst skill trends throughout 2023')
 plt.show()
 ```
 
+### Plot image:
+![image](https://github.com/user-attachments/assets/a78eef3e-336a-41d3-b2c0-caed960c7fc9)
+
 ### Conclusion of the plot:
 - SQL and Excel consistently show high demand throughout the year, indicating their critical importance for Data Analyst positions.
 - Tableau, Python, and Power BI have relatively lower demand compared to SQL and Excel, but they also show varying trends throughout the year.
@@ -137,6 +143,9 @@ plt.gca().xaxis.set_major_formatter(ticks_x)
 # Display the plot
 plt.show()
 ```
+
+### Plot image:
+![image](https://github.com/user-attachments/assets/012b03ce-86ad-41f4-9c09-120622f0b4f2)
 
 ### Conclusion of the plot:
 - Median Salaries: Senior positions (Senior Data Scientist, Senior Data Engineer, Senior Data Analyst) generally have higher median salaries compared to their non-senior counterparts (Data Scientist, Data Engineer, Data Analyst).
@@ -184,6 +193,9 @@ plt.tight_layout()
 # Display the plot
 plt.show()
 ```
+
+### Plot image:
+![image](https://github.com/user-attachments/assets/edde79e2-445c-40a0-9f39-7fe4fa51388a)
 
 ### Conclusion:
 - Skills that are highly demanded (higher percentage on the x-axis) and associated with higher median salaries (higher value on the y-axis) are considered optimal for Data Analysts.
