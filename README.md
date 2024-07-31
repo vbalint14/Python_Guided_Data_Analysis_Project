@@ -102,3 +102,44 @@ plt.show()
 - Tableau, Python, and Power BI have relatively lower demand compared to SQL and Excel, but they also show varying trends throughout the year.
 - There are noticeable fluctuations in the demand for these skills, suggesting that the requirements for Data Analyst roles can change over time.
 This analysis provides valuable insights for both job seekers and employers in the data analysis field, highlighting the most sought-after skills and how their demand changes over time.
+
+## Plot 3: Salary analysis
+### Goal:
+The goal of this plot is to visualize the salary distributions for different data-related job titles in the US, providing insights into the salary ranges and median salaries for each job title.
+
+### Plot code and explanation:
+```python
+# Create a box plot to visualize salary distributions for the top 6 data job titles
+sns.boxplot(data=df_US_top6, x='salary_year_avg', y='job_title_short', order=job_order)
+
+# Set the seaborn theme
+sns.set_theme(style='ticks')
+
+# Remove the top and right spines from the plot
+sns.despine()
+
+# Set the title of the plot
+plt.title('Salary Distributions of Data Jobs in the US')
+
+# Set the label for the x-axis
+plt.xlabel('Yearly Salary (USD)')
+
+# Remove the label for the y-axis
+plt.ylabel('')
+
+# Set the limit for the x-axis
+plt.xlim(0, 600000)
+
+# Format the x-axis ticks to show salaries in 'K' format
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+
+# Display the plot
+plt.show()
+```
+
+### Conclusion of the plot:
+- Median Salaries: Senior positions (Senior Data Scientist, Senior Data Engineer, Senior Data Analyst) generally have higher median salaries compared to their non-senior counterparts (Data Scientist, Data Engineer, Data Analyst).
+- Salary Ranges: There is a wide range of salaries within each job title, with some outliers indicating very high salaries.
+- Consistency: Data Scientist, Data Engineer, and Senior Data Scientist roles show relatively consistent salary distributions with fewer extreme outliers compared to other roles.
+This analysis provides valuable insights into the salary expectations for different data-related job titles in the US job market, helping job seekers and employers make informed decisions.
