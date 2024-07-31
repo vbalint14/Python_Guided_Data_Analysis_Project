@@ -97,6 +97,7 @@ plt.title('Data Analyst skill trends throughout 2023')
 plt.show()
 ```
 
+### Conclusion of the plot:
 - SQL and Excel consistently show high demand throughout the year, indicating their critical importance for Data Analyst positions.
 - Tableau, Python, and Power BI have relatively lower demand compared to SQL and Excel, but they also show varying trends throughout the year.
 - There are noticeable fluctuations in the demand for these skills, suggesting that the requirements for Data Analyst roles can change over time.
