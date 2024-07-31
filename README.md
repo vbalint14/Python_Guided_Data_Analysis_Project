@@ -66,3 +66,38 @@ Conclusion: SQL and Python are critical, along with cloud technologies like AWS 
 **Data Scientist:**
 Top Skills: Python (72%), SQL (51%), R (44%), SAS (24%), Tableau (24%).
 Conclusion: Python is the most demanded skill, followed by SQL and R, indicating the importance of programming and data manipulation skills in data science roles.
+
+## Plot 2: Skill trends
+### Goal:
+The goal of this plot is to visualize the monthly trends in the demand for various skills in Data Analyst job postings throughout 2023. By tracking the skill counts over time, we can identify patterns and shifts in the skills that employers are seeking for Data Analyst roles.
+
+### Plot code and explanation:
+```python
+# Plot the first five columns of the dataframe as a line plot
+df_da_hu_piv.iloc[:, :5].plot(kind='line')
+
+# Remove the top and right spines from plot
+sns.despine()
+
+# Get the current axis and make the legend visible
+ax = plt.gca()
+ax.legend().set_visible(True)
+
+# Adjust the layout to fit everything properly
+plt.tight_layout()
+
+# Set the labels for x and y axes
+plt.xlabel('Months')
+plt.ylabel('Skill counts in Data Analyst job postings')
+
+# Set the title of the plot
+plt.title('Data Analyst skill trends throughout 2023')
+
+# Display the plot
+plt.show()
+```
+
+- SQL and Excel consistently show high demand throughout the year, indicating their critical importance for Data Analyst positions.
+- Tableau, Python, and Power BI have relatively lower demand compared to SQL and Excel, but they also show varying trends throughout the year.
+- There are noticeable fluctuations in the demand for these skills, suggesting that the requirements for Data Analyst roles can change over time.
+This analysis provides valuable insights for both job seekers and employers in the data analysis field, highlighting the most sought-after skills and how their demand changes over time.
