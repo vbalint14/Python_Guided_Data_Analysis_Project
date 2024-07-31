@@ -55,14 +55,14 @@ plt.show()
 ```
 
 ### Conclusion of the plot:
-Data Analyst:
+**Data Analyst:**
 Top Skills: SQL (51%), Excel (41%), Tableau (28%), Python (27%), SAS (19%).
 Conclusion: SQL and Excel are highly demanded, emphasizing the need for strong data querying and spreadsheet skills.
 
-Data Engineer:
+**Data Engineer:**
 Top Skills: SQL (68%), Python (65%), AWS (43%), Azure (32%), Spark (32%).
 Conclusion: SQL and Python are critical, along with cloud technologies like AWS and Azure, and big data tools like Spark.
 
-Data Scientist:
+**Data Scientist:**
 Top Skills: Python (72%), SQL (51%), R (44%), SAS (24%), Tableau (24%).
 Conclusion: Python is the most demanded skill, followed by SQL and R, indicating the importance of programming and data manipulation skills in data science roles.
