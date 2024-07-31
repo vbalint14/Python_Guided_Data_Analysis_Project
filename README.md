@@ -101,7 +101,7 @@ plt.show()
 - SQL and Excel consistently show high demand throughout the year, indicating their critical importance for Data Analyst positions.
 - Tableau, Python, and Power BI have relatively lower demand compared to SQL and Excel, but they also show varying trends throughout the year.
 - There are noticeable fluctuations in the demand for these skills, suggesting that the requirements for Data Analyst roles can change over time.
-This analysis provides valuable insights for both job seekers and employers in the data analysis field, highlighting the most sought-after skills and how their demand changes over time.
+- This analysis provides valuable insights for both job seekers and employers in the data analysis field, highlighting the most sought-after skills and how their demand changes over time.
 
 ## Plot 3: Salary analysis
 ### Goal:
@@ -142,4 +142,51 @@ plt.show()
 - Median Salaries: Senior positions (Senior Data Scientist, Senior Data Engineer, Senior Data Analyst) generally have higher median salaries compared to their non-senior counterparts (Data Scientist, Data Engineer, Data Analyst).
 - Salary Ranges: There is a wide range of salaries within each job title, with some outliers indicating very high salaries.
 - Consistency: Data Scientist, Data Engineer, and Senior Data Scientist roles show relatively consistent salary distributions with fewer extreme outliers compared to other roles.
-This analysis provides valuable insights into the salary expectations for different data-related job titles in the US job market, helping job seekers and employers make informed decisions.
+- This analysis provides valuable insights into the salary expectations for different data-related job titles in the US job market, helping job seekers and employers make informed decisions.
+
+## Plot 4: Optimal skills:
+### Goal:
+The goal of this plot is to identify the most optimal skills for Data Analysts in the US by visualizing how the demand for specific skills in job postings correlates with the median salary associated with those skills. This helps in understanding which skills are both in high demand and associated with higher salaries.
+
+### Plot code and explanation:
+```python
+from adjustText import adjust_text
+
+# Create a scatter plot to visualize the relationship between skill demand and median salary
+plt.scatter(df_DA_skills_high_demand['skill_percent'], df_DA_skills_high_demand['median_salary'])
+
+# Set the label for the x-axis
+plt.xlabel('Percent of Data Analyst Jobs')
+
+# Set the label for the y-axis
+plt.ylabel('Median Salary ($USD)')
+
+# Set the title of the plot
+plt.title('Most Optimal Skills for Data Analysts in the US')
+
+# Get the current axis
+ax = plt.gca()
+
+# Format the y-axis to show salaries in 'K' format
+ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K'))
+
+# Add text labels to each point in the scatter plot
+texts = []
+for i, txt in enumerate(df_DA_skills_high_demand.index):
+    texts.append(plt.text(df_DA_skills_high_demand['skill_percent'].iloc[i], df_DA_skills_high_demand['median_salary'].iloc[i], " " + txt))
+
+# Adjust the text labels to avoid overlapping
+adjust_text(texts, arrowprops=dict(arrowstyle='->', color='gray'))
+
+# Adjust the layout to fit everything properly
+plt.tight_layout()
+
+# Display the plot
+plt.show()
+```
+
+### Conclusion:
+- Skills that are highly demanded (higher percentage on the x-axis) and associated with higher median salaries (higher value on the y-axis) are considered optimal for Data Analysts.
+- This visualization helps job seekers identify which skills to focus on acquiring or improving to maximize their job opportunities and salary potential.
+- Employers can also use this information to understand the market value of different skills and adjust their hiring strategies accordingly.
+- This analysis provides valuable insights into the skill demand and salary trends for Data Analysts in the US job market.
